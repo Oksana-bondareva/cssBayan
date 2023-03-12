@@ -1,0 +1,126 @@
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+h1 { 
+    text-align: center 
+}
+
+.accordion {
+    margin: 0 auto;
+    border: 1em solid #d3d3d3;
+    border-radius: 2em;
+    overflow: hidden;
+    width: 70%;
+    padding: 2%;
+}
+
+.accordion>ul {
+    margin: 1em;
+    padding: 1em;
+    list-style:none;
+}
+.accordion>ul>li {
+    display:block;
+    overflow: hidden;
+    margin: 20;
+    padding: 0;
+    height:3em;
+    max-width: auto;
+    transition: height 0.5s ease-in-out;
+}
+
+.accordion>ul>li>h3 {
+    display:block;
+    margin: 0 auto;
+    padding: 0.9em 0.9em;  
+    color: #1515d2;
+    text-decoration: none;
+    font: 1em   Arial, Sans-Serif;
+    text-shadow: 1 #fff;
+    text-transform:uppercase;
+    background: #c9c9c9;
+}
+
+.accordion>ul>li>div {
+    background-color:#fcfcfc;
+    margin: 0 auto;
+    padding:5%;
+    color: #555;
+    font-size: 14px;
+    height: 100%;
+}
+
+.accordion>ul>li:hover {
+    height: 25em;
+}
+
+.accordion:hover>ul>li:hover>h3 {
+    color: #3A505C;
+    background: #d3d3d3;
+    cursor:pointer;
+    padding-left: 5%;
+}
+
+
+.accordion img{ 
+    width: 25%; height: auto;
+    vertical-align: middle;
+    cursor:pointer;
+    padding-left: 30%;
+  }
+
+ .card { 
+    float: right;
+    width: 10%; height: auto;
+    display: none
+}
+
+.accordion:hover .card { 
+    display: block; 
+}
+
+.card:hover { 
+    transform: rotate(45deg);
+    transition: height 1s ease-in-out;
+}
+
+.accordion img:hover {
+    transform: scale(1.2);   
+}
+
+@media (width: 320px) and (height: 568) {
+    html {
+        font-size: 90%;
+    }
+    .accordion>ul>li>h3 {
+        display:block;
+        margin: 0 auto;
+        padding: 0.9em 0.9em;  
+        color: #1515d2;
+        text-decoration: none;
+        font: 1em Sans-Serif;
+        text-shadow: 1 1px #fff;
+        text-transform:uppercase;
+        background: #c9c9c9;
+    }
+}
+
+@media (width: 820px) and (height: 1180) {
+    html {
+        font-size: 50%;
+    }
+    .accordion>ul>li>h3 {
+        display:block;
+        margin: 0 auto;
+        padding: 0.9em 0.9em;  
+        color: #1515d2;
+        text-decoration: none;
+        font: 1em   Arial;
+        text-shadow: 1 #fff;
+        text-transform:uppercase;
+        background: #c9c9c9;
+    }
+}
